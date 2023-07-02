@@ -35,9 +35,6 @@ const Cast = () => {
                   `https://image.tmdb.org/t/p/w500${actor.profile_path}`
                 }
                 alt={actor.name}
-                onError={e => {
-                  e.target.src = defaultImage;
-                }}
               />
               <CastName>{actor.name}</CastName>
               <CastCharacter>Character: {actor.character}</CastCharacter>
