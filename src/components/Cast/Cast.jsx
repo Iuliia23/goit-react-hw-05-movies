@@ -12,7 +12,7 @@ import { useParams } from 'react-router-dom';
 import { fetchMovieCredits } from 'utils/api';
 
 const defaultImage =
-  'https://ireland.apollo.olxcdn.com/v1/files/0iq0gb9ppip8-UA/image;s=1000x700';
+  'https://images.app.goo.gl/fwZzvdzvusPvXjmY9';
 
 const Cast = () => {
   const [cast, setCast] = useState([]);
