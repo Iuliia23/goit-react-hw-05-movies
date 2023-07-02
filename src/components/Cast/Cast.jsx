@@ -11,9 +11,6 @@ import {
 import { useParams } from 'react-router-dom';
 import { fetchMovieCredits } from 'utils/api';
 
-const defaultImage =
-  'https://images.app.goo.gl/fwZzvdzvusPvXjmY9';
-
 const Cast = () => {
   const [cast, setCast] = useState([]);
   const { movieId } = useParams();
@@ -35,8 +32,7 @@ const Cast = () => {
             <CastItem key={actor.id}>
               <CastImage
                 src={
-                  `https://image.tmdb.org/t/p/w500${actor.profile_path}` ||
-                  defaultImage
+                  `https://image.tmdb.org/t/p/w500${actor.profile_path}`
                 }
                 alt={actor.name}
                 onError={e => {

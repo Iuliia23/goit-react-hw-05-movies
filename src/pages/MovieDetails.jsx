@@ -15,8 +15,8 @@ import {
 } from '.././components/MovieDetailsComponent/MovieDetails.styled';
 import Loader from 'components/Loader/Loader';
 
-const defaultImage =
-  'https://images.app.goo.gl/fwZzvdzvusPvXjmY9';
+// const defaultImage =
+//   'https://ireland.apollo.olxcdn.com/v1/files/0iq0gb9ppip8-UA/image;s=1000x700';
 
 const MovieDetails = () => {
   const { movieId } = useParams();
@@ -57,7 +57,7 @@ const MovieDetails = () => {
       <ButtonBack location={locationRef.current} />
       <div>
         <MovieDetailsContainer>
-          <MovieImage
+        <MovieImage
             src={
               movie.poster_path
                 ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
